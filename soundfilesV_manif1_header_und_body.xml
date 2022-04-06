@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+<meiHead>
+  <fileDesc>
+          <titleStmt>
+              <title>Codierung von Soundfile Nr. V</title>
+          </titleStmt>
+          <pubStmt/><!--Autor:in, Ziel, Entstehungskontext,... -->
+  </fileDesc>
+   <manifestationList>
+      <manifestation xmlns="http://www.music-encoding.org/ns/mei" xml:id="soundfilesV_manif1"><!-- =Die normale Werkfassung für Harfe und Tonband gesamt-->
+         <titleStmt>  <!--Titel, der auf der jeweiligen Manifestation steht = Gesamttitel von beiden Bestandteilen -->
+            <title>Soundfile Nr. V</title>
+         </titleStmt>
+         <componentList> <!-- =die zur Werkfassung gehörigen Teile -->
+             <manifestation type="graphic_score" xml:id="soundfilesV_source1"> <!--graphische Partitur-->
+                <titleStmt>
+                  <title type="short">Soundfiles Nr. V</title> <!--Titel, der auf der Partitur zu finden ist-->
+                </titleStmt>
+               <physDesc>
+                  <titlePage>
+                    <p></p> <!--Titelseite der Partitur-->
+                  </titlePage>
+                  <dimensions analog="marc:300c" unit="cm"/> <!--Höhe x Breite der Partitur-->
+               </physDesc>
+               <itemList>
+                    <item xml:id="item_graphic_score">
+                      <physLoc> <!-- gehört an das Exemplar/Item-->
+                         <repository analog="marc:852" xml:id="D-Dl">
+                            <name>Die Sächsische Landesbibliothek – Staats- und Universitätsbibliothek</name>
+                            <identifier auth.uri="https://opac.rism.info" auth="RISM" codedval="RISM-label">D-Dl</identifier>
+                         </repository>
+                         <identifier auth.uri="???" auth="???" type="shelfLocation" analog="marc:852c">??? Sig. Voigtländer Vorlass</identifier>
+                      </physLoc>
+                      <history>
+                         <provenance>
+                            <repository analog="marc:561a">Vorlass Lothar Voigtländer</repository>
+                         </provenance>
+                            </history>
+                       <notesStmt>
+                          <annot>keine Anstreichungen etc. im Notentext</annot>
+                       </notesStmt>
+                    </item>
+                    <item><!-- ggf. weitere Exemplare, sofern vorhanden --></item>
+               </itemList>
+               <relationList>
+                 <relation rel="isPartOf" target="#soundfilesV_manif1"/>
+               </relationList>
+            </manifestation>
+            <manifestation type="original_playback_tape" xml:id="soundfilesV_source2"> <!--Tonband-->
+               <titleStmt>
+                  <title type="short">Soundfiles Nr. V</title>                  <!-- Titel des Tonbands -->
+               </titleStmt>
+               <physDesc>
+                  <extent analog="marc:300a" unit="reels">1 (wahrscheinlich)</extent> <!-- sind noch andere "Sätze" auf demselben Band?? -->
+                  <dimensions analog="marc:300c" unit="cm">wie lang ist das Tonband</dimensions> <!-- und: von wo bis wo auf dem Band ist "Soundfile Nr. V" -->
+                  <trackConfig>2</trackConfig> <!--Anzahl Spuren: 2, track configuration: Number of physical/input tracks on a sound medium (e.g., eight track, twelve track).-->
+                  <playingSpeed>... ips</playingSpeed> <!-- vorgesehene Bandgeschwindigkeit (ips= inch per second), Playing speed for a sound recording is the speed at which the carrier must be operated to produce the sound intended (e.g., 33 1/3 rpm, 19 cm/s, etc.). -->
+               </physDesc>
+               <contents>
+                  <contentItem>Soundfiles Nr. V Stereotonspur</contentItem>
+               </contents>
+               <itemList>
+                 <item>
+                   <physLoc>
+                      <repository>
+                         <name>Die Sächsische Landesbibliothek – Staats- und Universitätsbibliothek</name>
+                         <identifier auth.uri="https://opac.rism.info" auth="RISM" codedval="RISM-label">D-Dl</identifier>
+                      </repository>
+                      <identifier auth.uri="???" auth="???" type="shelfLocation" analog="marc:852c">??? Sig. Voigtländer Vorlass</identifier>
+                   </physLoc>
+                   <history>
+                      <provenance>
+                         <repository analog="marc:561a">Vorlass Lothar Voigtländer</repository>
+                      </provenance>
+                   </history>
+                   <notesStmt>
+                     <annot></annot>
+                   </notesStmt>
+                 </item>
+               </itemList>
+               <relationList>
+                  <relation rel="isPartOf" target="#soundfilesV_manif1"/>
+               </relationList>
+            </manifestation>
+         </componentList>   
+         <relationList>
+            <relation rel="isEmbodimentOf" target="#soundfilesV_expr1"/>
+            <relation rel="hasPart" target="#soundfilesV_source1"/>
+            <relation rel="hasPart" target="#soundfilesV_source2"/>
+         </relationList>
+      </manifestation>
+   </manifestationList>
+</meiHead>
+<music>
+     <facsimile>
+       <surface xml:id="page_04" n="1">
+                 <graphic target="…/soundfilesV_page1.jpg" xml:id="graphic_1" type="facsimile" width="3000" height="2100"/>
+<!-- zones mit "Ver-Sekundung" -->
+                 <zone xml:id="zone_01" type="second" ulx="100" uly="181" lrx="702" lry="305"/>
+                 <zone xml:id="zone_02" type="second" ulx="200" uly="181" lrx="702" lry="305"/>
+       </surface>
+    </facsimile>
+<performance><!-- performance lt. MEI 5.0: "A presentation of one or more musical works" - Beschreibung ist
+  viel zu spezifisch, muss ausgeweitet werden im Sinne von irgendein Klangkomplex/Verlauf // semantisch ist "performance" auch falsch, oder?-->
+  <recording>
+     <avFile xml:id="soundfilesV_tape" type="magneticAudioTape" target="…/Audiospur.aiff"> <!-- warum erscheint hier die aiff-Datei?? -->
+     </avFile>
+        <clip xml:id="clip_01" betype="time" begin="00:00:00" end="00:00:01" data="#soundfilesV_tape"/>
+        <clip xml:id="clip_02" betype="time" begin="00:00:01" end="00:00:02" data="#soundfilesV_tape"/>
+        <!-- was beschreiben wir hier? Bandlänge pro Sekunde? clip beschreibt nur eine zeitliche Einheit, unabhängig vom Medium-->
+    </avFile>
+   </recording>
+ </performance>
+  <body>
+      <mdiv xml:id="mdiv_01" label="SOUNDFILE_NrV_S1-">
+         <score xml:id="score_01">
+            <scoreDef>
+                   <staffGrp xml:id="staffgrp_01" symbol="bracket">
+                     <staffDef xml:id="staffdef_01" n="1" type="tapeReprMillimeterPaper" unit="tenMillimeterPerSecond">
+                        <label>Tape</label>
+                        <labelAbbr>Tape</labelAbbr>
+                     </staffDef>
+
+                     <staffDef xml:id="staffdef-02" n="2" type="mixedGraphicNotation">
+                        <label>Harfe</label>
+                        <labelAbbr>Harfe</labelAbbr>
+                     </staffDef>
+                  </staffGrp>
+            </scoreDef>
+            <section xml:id="section_01">
+<!-- Element timeSpan: analog zu measure in 'normalem' MEI -->
+            <timeSpan unit="second" n="1" xml:id="second_01" facs="#zone_01" tape="#clip_01">
+                 <staff n="1">
+                    <layer> <!-- hier könnte theoretisch eine Transkription oder teilweise Transkription der Notation der Harfe in Sekunde 1 stehen / bringt das was? --> </layer>
+                 </staff>
+                  <staff n="2">
+                 </staff>
+            </timeSpan>   
+               <timeSpan unit="second" n="2" xml:id="second_02" facs="#zone_02">
+                  <staff n="2">
+                       <layer n="1"/>  
+                    </staff>
+               </timeSpan>
+            </section>
+         </score>
+      </mdiv>
+   </body>
+</music>
+</mei>
