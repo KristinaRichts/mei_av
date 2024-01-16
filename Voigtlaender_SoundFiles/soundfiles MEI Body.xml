@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../../../../../GitHub/MEI/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../../../../../GitHub/MEI/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+      </titleStmt>
+      <pubStmt/>
+    </fileDesc>
+  </meiHead>
+  <music>
+    
+    <facsimile>
+      <surface xml:id="page_04" n="1">
+        <graphic/> <!--mit @target, @xml:id, @type="facsimile", @width, @height-->
+        <zone xml:id="zone_01" type="measure" ulx="487" uly="181" lrx="702" lry="305"/> <!--statt type="measure" vielleicht "musical event", analog zum Gehörten?-->
+      </surface>
+      <surface>
+        <graphic/>
+        <zone xml:id="zone_02"></zone>
+      </surface>
+    </facsimile>
+    
+    <performance>
+      <recording n="1" xml:id="recording1">
+        <avFile xml:id="avFile1" n="1" type="magneticAudioTape" label=""> <!--alle zusammenhängenden clips einer definierten Sequenz o.Ä.? weitere/andere Grp-Elemente erforderlich?-->
+          <clip n="1" xml:id="avFile1_clip_01" betype="time" begin="00:00:00" end="00:00:01"> 
+            <when absolute="">
+              <extData></extData> <!--hier ptr zu externer Audio-Quelle-->
+              <extData/> <!--Mehrfachverlinkung möglich-->
+            </when>
+          </clip>
+          <clip n="2" xml:id="avFile1_clip_02" betype="time" begin="00:00:01" end="00:00:02">
+            <when absolute="">
+              <extData/>
+            </when>
+          </clip>
+          <clip n="3" xml:id="avFile1_clip_03"/> <!--Wo/Wie würde man Beschädigungen am Tonband etc. erfassen?-->
+          <clip n="4" xml:id="avFile1_clip_04"/>
+          <!--etc.-->
+        </avFile>
+        <avFile xml:id="avFile2" n="2">
+          <clip n="1" xml:id="avFile2_clip_01"/>
+          <clip n="2" xml:id="avFile2_clip_02"/> <!--etc.-->
+        </avFile>
+      </recording>
+      <recording n="2" xml:id="recording2"/>
+    </performance>
+
+    <body>
+      <mdiv xml:id="mdiv_01" label="SOUNDFILE Nr. V � S.�1 �">
+        <score xml:id="score_01">
+          <scoreDef>
+            <staffGrp xml:id="staffgrp_01" symbol="bracket">
+              <staffDef n="1" lines="1" lines.visible="false" xml:id="staffdef_01" type="tapeReprMillimeterPaper">
+                <label>Tape</label>
+                <labelAbbr>Tape</labelAbbr>
+              </staffDef>
+
+              <staffDef xml:id="staffdef-02" n="2" lines="5" type="mixedGraphicNotation">
+                <label>Harfe</label>
+                <labelAbbr>Harfe</labelAbbr>
+              </staffDef>
+            </staffGrp>
+          </scoreDef>
+
+          <section xml:id="section_01">
+
+            <measure n="1" xml:id="second_01" facs="#zone_01" synch="#avFile1_clip_01">
+              <staff n="1">
+                <layer>
+                  <!-- hier könnte theoretisch eine Transkription oder teilweise Transkription der Notation in Sekunde 1 stehen -->
+                </layer>
+              </staff>
+              <staff n="2"> </staff> <!--Notation hier erfassen, Klang unter performance? klappt das?-->
+            </measure>
+
+            <measure n="2" xml:id="second_02" facs="#zone_02">
+              <staff n="2">
+                <layer n="1"> </layer>
+              </staff>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>

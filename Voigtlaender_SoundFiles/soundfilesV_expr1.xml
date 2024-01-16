@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Expression-Datei nach Vorbild Hoftheaterprojekt -->
+<?xml-model href="../../../WeGA-ODD/schema/de/wegaWorks.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../../WeGA-ODD/schema/de/wegaWorks.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<expression xmlns="http://www.music-encoding.org/ns/mei" xml:id="soundfilesV_expr1"> <!--MEI-Version-->
+    <title xml:lang="de">Soundfiles V</title>
+   <title type="short">Expression 1</title>
+    <langUsage/>
+    <perfMedium>
+            <perfResList>
+              <head>Orchestration</head>
+               <perfRes>Harp</perfRes>
+               <perfRes>Tape</perfRes>
+            </perfResList>
+    </perfMedium>
+    <relationList>
+      <!-- Verweis auf Werk-Ebene: -->
+        <relation rel="isRealizationOf" target="#soundfilesV"/>
+        <!-- Verweise auf zugehöriges Quellenkonvolut: (Partitur und Band)-->
+              <relation rel="hasEmbodiment" target="#soundfilesV_manif1"/>
+            </relationList>
+</expression>

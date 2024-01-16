@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+<meiHead>
+  <fileDesc>
+          <titleStmt>
+              <title></title>
+          </titleStmt>
+          <pubStmt></pubStmt>
+      </fileDesc>
+
+<manifestationList>
+<manifestation xmlns="http://www.music-encoding.org/ns/mei" xml:id="soundfilesV_manif1">
+   <identifier auth.uri="https://???" auth="RISM" type="RISM-ID">???</identifier>
+   <titleStmt>
+      <title type="uniform" analog="marc:245a">Soundfile Nr. V</title>
+      <respStmt>
+         <persName auth.uri="https://d-nb.info/gnd/124345115" role="marc:cmp" codedval="124345115">Voigtländer, Lothar</persName>
+      </respStmt>
+   </titleStmt>
+   <physLoc>
+      <repository analog="marc:852" xml:id="D-Dl">
+         <name>Die Sächsische Landesbibliothek – Staats- und Universitätsbibliothek</name>
+         <identifier auth.uri="https://opac.rism.info" auth="RISM" codedval="RISM-label">D-Dl</identifier>
+      </repository>
+      <identifier auth.uri="???"
+                  auth="???"
+                  type="shelfLocation"
+                  analog="marc:852c">??? Sig. Voigtländer Vorlasss</identifier>
+   </physLoc>
+   <history>
+      <provenance>
+         <repository analog="marc:561a">Vorlass Lothar Voigtländer</repository>
+      </provenance>
+         </history>
+   <langUsage>
+      <language>
+      </language>
+   </langUsage>
+  <notesStmt>
+     <annot></annot>
+  </notesStmt>
+   <componentList>
+       <manifestation type="graphic_score" xml:id="soundfilesV_source1">
+         <titleStmt>
+            <title>Soundfiles Nr. V</title>
+          </titleStmt>
+         <physDesc>
+            <titlePage>
+               <p></p>
+            </titlePage>
+            <extent analog="marc:300a" unit="pag">??</extent>
+            <dimensions analog="marc:300c" unit="cm">??</dimensions>
+            <condition>??</condition>
+         </physDesc>
+         <physLoc>
+            <repository analog="marc:852"/>
+            <identifier type="shelfLocation" analog="marc:852c">??</identifier>
+         </physLoc>
+         <contents>
+            <contentItem>Soundfiles Nr. V Tape, Harfe</contentItem>
+         </contents>
+         <notesStmt>
+            <annot>keine Anstreichungen etc. im Notentext</annot>
+         </notesStmt>
+         <relationList>
+           <relation rel="isPartOf" target="#soundfilesV_manif1"/>
+         </relationList>
+      </manifestation>
+      <manifestation type="playback_tape" xml:id="soundfilesV_source2">
+         <titleStmt>
+           <!-- Beschriftung des Tonbands? -->
+            <title type="short">Soundfiles Nr. V</title>
+          </titleStmt>
+         <physDesc>
+            <titlePage>
+               <p></p>
+            </titlePage>
+            <extent analog="marc:300a" unit="reels">1 (wahrscheinlich)</extent> <!-- sind noch andere "Sätze" auf demselben Band?? -->
+            <dimensions analog="marc:300c" unit="cm">wie lang ist das Tonband</dimensions> <!-- und: von wo bis wo auf dem Band ist "Soundfile Nr. V" -->
+<!-- Anzahl der Spuren   -->
+<spurenAnzahl>2</spurenAnzahl>
+<!-- Abspielgeschwindigkeit -->
+                <vorgeseheneBandgeschwindigkeit unit="ips">???</vorgeseheneBandgeschwindigkeit> <!-- ips = inch per second -->
+                <condition>??</condition>
+               </physDesc>
+         <physLoc>
+            <repository analog="marc:852"/>
+            <identifier type="shelfLocation" analog="marc:852c">??</identifier>
+         </physLoc>
+         <contents>
+            <contentItem>Soundfiles Nr. V Stereotonspur</contentItem>
+         </contents>
+         <notesStmt>
+            <annot></annot>
+         </notesStmt>
+         <relationList>
+            <relation rel="isPartOf" target="#soundfilesV_manif1"/>
+         </relationList>
+
+      </manifestation>
+   </componentList>
+   <relationList>
+      <relation rel="isEmbodimentOf" target="#soundfilesV_expr1"/>
+   </relationList>
+</manifestation>
+</manifestationList>
+</meiHead>
+<music></music>
+</mei>

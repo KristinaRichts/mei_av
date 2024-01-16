@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+<meiHead>
+  <relationList>
+     <relation rel="isEmbodimentOf" target="#soundfilesV_manif1_graphic_score"/>
+     <relation rel="isEmbodimentOf" target="#soundfilesV_manif1_playback_tape"/>
+   </relationList>
+<meiHead/>
+<music>
+     <facsimile>
+       <surface xml:id="page_04" n="1">
+                 <graphic target="favart/source_B2/00000062.jpg" xml:id="edirom_graphic_a678ce44-6bd7-41b1-bf1b-82e12ac1a484" type="facsimile" width="1569" height="2049"/>
+                 <zone xml:id="zone_01" type="measure" ulx="487" uly="181" lrx="702" lry="305"/>
+       </surface>
+    </facsimile>
+
+<!-- recording sollte vermutlich als Quelle separat kodiert werden, mit eigenem body, damit nicht in einem MEI-File 2 Quellen gleichzeitig kodiert werden -->
+    <recording>
+      <avFile type="magneticAudioTape">
+        <clip xml:id="clip_01" betype="time" begin="00:00:00" end="00:00:01" data="#pfadAudio"/>
+        <!-- was beschreiben wir hier? Bandlänge pro Sekunde? -->
+    </avFile>
+   </recording>
+
+  <body>
+      <mdiv xml:id="mdiv_01" label="SOUNDFILE Nr. V – S. 1 –">
+         <score xml:id="score_01">
+            <scoreDef>
+                   <staffGrp xml:id="staffgrp_01" symbol="bracket">
+                     <staffDef xml:id="staffdef_01" n="1" type="tapeReprMillimeterPaper" unit="tenMillimeterPerSecond">
+                        <label>Tape</label>
+                        <labelAbbr>Tape</labelAbbr>
+                     </staffDef>
+
+                     <staffDef xml:id="staffdef-02" n="2" type="mixedGraphicNotation">
+                        <label>Harfe</label>
+                        <labelAbbr>Harfe</labelAbbr>
+                     </staffDef>
+                  </staffGrp>
+            </scoreDef>
+
+            <section xml:id="section_01">
+
+<!-- Element second: analog zu measure in 'normalem' MEI -->
+<second n="1" xml:id="second_01" facs="#zone_01" tape="#clip_01">
+  <staff n="1">
+     <layer> <!-- hier könnte theoretisch eine Transkription oder teilweise Transkription der Notation in Sekunde 1 stehen --> </layer>
+  </staff>
+   <staff n="2">
+  </staff>
+</second>
+
+<second n="2" xml:id="second_02" facs="#zone_02">
+<staff n="2">
+     <layer n="1">  </layer>
+  </staff>
+            </section>
+         </score>
+      </mdiv>
+   </body>
+</music>
+</mei>
