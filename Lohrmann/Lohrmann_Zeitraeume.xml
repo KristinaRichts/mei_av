@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei">
+    <meiHead>
+        <fileDesc>
+            <titleStmt>
+                <title>Elektronische Transkription von Uwe Lohrmanns Werk "Zeiträume"</title>
+            </titleStmt>
+            <pubStmt>
+                <unpub/>
+            </pubStmt>
+        </fileDesc>
+        <workList>
+            <work>
+                <title>Zeiträume : für Percussion und Zuspielband (III. Satz) für 4 Spieler</title>
+                <composer>
+                    <persName auth.uri="https://d-nb.info/gnd/" codedval="124172245">Lohrmann, Uwe</persName>
+                </composer>
+                <creation>
+                    <geogName>Heidelberg</geogName>
+                    <date isodate="1996">1996</date>
+                </creation>
+                <perfMedium>
+                    <perfResList>
+                        <perfRes>2 Triangel</perfRes>
+                        <perfResList>
+                            <perfRes >3 hängende Becken</perfRes>
+                            <perfRes>chinesisches Becken</perfRes>
+                            <perfRes>Hi-hat</perfRes>
+                            <perfRes>4 Tamtam</perfRes>
+                            <perfRes>13 kleine Glocken</perfRes>
+                            <perfRes>7 große Glocken</perfRes>
+                        </perfResList>
+                        <perfResList>
+                            <perfRes>Peitsche</perfRes>
+                            <perfRes>Schelle - Holzblock</perfRes>
+                            <perfRes>Clave</perfRes>
+                            <perfRes>3 Maracas</perfRes>
+                        </perfResList>
+                        <perfResList>
+                            <perfRes>4 Bongos</perfRes>
+                            <perfRes>4 Touch Drums</perfRes>
+                            <perfRes>4 Touch Drums</perfRes>
+                            <perfRes>3 Touch Drums</perfRes>
+                        </perfResList>
+                        <perfRes>2 kleine - 1 große Trommel</perfRes>
+                        <perfRes>5 Pauken</perfRes>
+                        <perfRes>Glockenspiel</perfRes>
+                        <perfRes>Marimbaphon</perfRes>
+                        <perfRes>Vibraphon</perfRes>
+                    </perfResList>
+                </perfMedium>
+                <contents>
+                    <contentItem>Satz I</contentItem>
+                    <contentItem>Satz II</contentItem>
+                    <contentItem>Satz III</contentItem>
+                    <contentItem>Satz IV</contentItem>
+                </contents>
+                <notesStmt>
+                    <annot type="work_description">Im III. Satz ist eine räumliche Zuspielung (4 Lautsprecher) von mehrstimmigen Sinustonklängen vorgesehen. Mit der beigefügten Partitur dieser Klänge muss mit Hilfe eines chromatischen Samplers/Sequenzers ein zuspielbarer Tonträger erstellt werden, der im III. Satz als Hintergrund über die vier Lautsprecher wiedergegeben wird.</annot>
+                    <annot>Notwendigerweise muss die Partitur vorher in eine Notenschrift-Datei wie Finale oder Sibelius übertragen werden.</annot>
+                </notesStmt>
+                <expressionList>
+                    <expression>
+                        <title>Partitur und Partitur der Sinus-Töne und -Klänge</title>
+                    </expression>
+                </expressionList>
+            </work>
+        </workList>
+        <manifestationList>
+            <manifestation type="print">
+                <creation>
+                    <date isodate="1996">1996</date>
+                </creation>
+                <componentList>
+                    <manifestation>
+                        <titleStmt>
+                            <title>Partitur</title>
+                        </titleStmt>
+                        <physDesc>
+                            <extent unit="page">62</extent>
+                        </physDesc>
+                    </manifestation>
+                    <manifestation>
+                        <titleStmt>
+                            <title>Partitur der Sinus-Töne und -Klänge</title>
+                            <title type="subordinate">zur Erstellung des Tonträgers für den III. Satz durch einen Sampler.</title>
+                        </titleStmt>
+                        <physDesc>
+                            <extent unit="page">8</extent>
+                            <addDesc>Vorausgesetzt ist, dass diese Partitur in eine Sibelius- oder Finale-Datei übertragen wird.</addDesc>
+                        </physDesc>
+                    </manifestation>
+                </componentList>
+            </manifestation>
+        </manifestationList>
+    </meiHead>
+    <music>
+        <performance> <!--Hier würden Informationen zur Aufnahme codiert werden-->
+            <recording>
+                <avFile>
+                    <clip>
+                        <when/>
+                    </clip>
+                </avFile>
+            </recording>
+        </performance>
+        <body>
+            <mdiv>
+                <score>
+                    <scoreDef>
+                        <staffGrp>
+                            <staffDef n="1" label="2 Triangeli" lines="1" meter.sym="common"/>
+                            <staffGrp>
+                                <staffDef n="2" label="Chin.Bckn./Tamt." lines="2" meter.sym="common"/>
+                                <staffDef n="3" label="4 Tamtam" lines="3" meter.sym="common"/>
+                                <staffDef n="4" label="Tempelbl." lines="1" meter.sym="common"/>
+                                <staffDef n="5" label="Gr.Trommel" lines="1" meter.sym="common"/>
+                            </staffGrp>
+                            <staffGrp label="Sinus">
+                                <staffDef n="6" lines="5" clef.shape="G" clef.line="2" meter.sym="common"/>
+                                <staffDef n="7" lines="5" clef.shape="G" clef.line="2" meter.sym="common"/>
+                            </staffGrp>
+                            <staffGrp label="Sinus">
+                                <staffDef n="8" lines="5" clef.shape="G" clef.line="2" meter.sym="common"/>
+                                <staffDef n="9" lines="5" clef.shape="G" clef.line="2" meter.sym="common"/>
+                                <staffDef n="10" lines="5" clef.shape="F" clef.line="4" meter.sym="common"/>
+                            </staffGrp>
+                        </staffGrp>
+                    </scoreDef>
+                    <section label="Satz III">
+                        <measure n="1">
+                            <staff n="1">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="2">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="3">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="4">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="5">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="6">
+                                <dir startid="#mRest6_1" place="above">über Lautsprecher zuzuspielen</dir>
+                                <layer>
+                                    <mRest xml:id="mRest6_1"/>
+                                </layer>
+                            </staff>
+                            <staff n="7">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="8">
+                                <dir startid="#chord8_1" place="above">über Lautsprecher zuzuspielen<annot>Siehe: <ref type="accMat">Schlagz.III.Satz Zuspielband.mus</ref></annot></dir>
+                                <layer>
+                                    <beam>
+                                        <chord xml:id="chord8_1" stem.dir="down" dur="16">
+                                            <note pname="e" oct="5"/>
+                                            <note pname="d" accid="s" oct="5"/>
+                                        </chord>
+                                        <chord xml:id="chord8_2" stem.dir="down" dur="8" dots="1">
+                                            <note pname="e" oct="5" tie="i"/>
+                                            <note pname="d" accid.ges="s" oct="5" tie="i"/>
+                                        </chord>
+                                    </beam>
+                                    <chord stem.dir="down" dur="2" dots="1">
+                                        <note pname="e" oct="5" tie="t i"/>
+                                        <note pname="d" accid.ges="s" oct="5" tie="t i"/>
+                                    </chord>
+                                </layer>
+                                <dynam place="below" staff="8" startid="#chord8_1">fff</dynam>
+                                <dynam place="below" staff="8" startid="#chord8_2">p</dynam>
+                            </staff>
+                            <staff n="9">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="10">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                        </measure>
+                        <measure n="2">
+                            <staff n="1">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="2">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="3">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="4">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="5">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="6">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="7">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="8">
+                                <layer>
+                                    <chord stem.dir="down" dur="4">
+                                        <note pname="e" oct="5" tie="t i"/>
+                                        <note pname="d" accid.ges="s" oct="5" tie="t i"/>
+                                    </chord>
+                                    <beam>
+                                        <chord stem.dir="down" dur="8">
+                                            <note pname="e" oct="5" tie="t"/>
+                                            <note pname="d" accid.ges="s" oct="5" tie="t"/>
+                                        </chord>
+                                        <chord stem.dir="down" dur="8">
+                                            <note pname="f" oct="6" tie="i"/>
+                                            <note pname="e" oct="5" tie="i"/>
+                                            <note pname="d" accid.ges="s" oct="5" tie="i"/>
+                                        </chord>
+                                    </beam>
+                                    <chord stem.dir="down" dur="4">
+                                        <note pname="f" oct="6" tie="t i"/>
+                                        <note pname="e" oct="5" tie="t i"/>
+                                        <note pname="d" accid.ges="s" oct="5" tie="t"/>
+                                    </chord>
+                                    <chord stem.dir="down" dur="4">
+                                        <note pname="g" accid="f" oct="7"/>
+                                        <note pname="f" oct="6" tie="t"/>
+                                        <note pname="e" oct="5" tie="t i"/>
+                                        <note pname="d" accid.ges="s" oct="5"/>
+                                    </chord>
+                                </layer>
+                            </staff>
+                            <staff n="9">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="10">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                        </measure>
+                        <measure n="3">
+                            <staff n="1">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="2">
+                                <dir place="above" startid="#mrest_3_1">mit Kontrabassbogen</dir>
+                                <layer>
+                                    <mRest xml:id="mrest_3_1"/>
+                                </layer>
+                            </staff>
+                            <staff n="3">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="4">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="5">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="6">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="7">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="8">
+                                <layer>
+                                    <chord stem.dir="down" dur="4">
+                                        <note pname="e" oct="5" tie="t i"/>
+                                        <note pname="d" accid.ges="s" oct="5"/>
+                                    </chord>
+                                    <note pname="e" oct="5" tie="t"/>
+                                    <rest dur="2"/>
+                                </layer>
+                            </staff>
+                            <staff n="9">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="10">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                        </measure>
+                        <measure n="4">
+                            <staff n="1">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="2">
+                                <layer>
+                                    <rest dur="4" xml:id="m4_rest1"/>
+                                    <note head.shape="diamond" dur="2" dots="1" stem.dir="up"/>
+                                </layer>
+                                <dynam place="below" startid="#m4_rest1">p</dynam>
+                            </staff>
+                            <staff n="3">
+                                <layer>
+                                    <rest dur="4"/>
+                                    <note xml:id="m4_s3_note1" dur="4" stem.dir="down" tie="i"/>
+                                    <rest dur="2"/>
+                                </layer>
+                                <dynam place="below" startid="#m4_s3_note1">pp</dynam>
+                            </staff>
+                            <staff n="4">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="5">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="6">
+                                <layer>
+                                    <rest dur="4"/>
+                                    <chord dur="2" dots="1">
+                                        <note pname="g" oct="6"/>
+                                        <note pname="a" accid="f" oct="6"/>
+                                        <note pname="f" oct="4"/>
+                                    </chord>
+                                </layer>
+                            </staff>
+                            <staff n="7">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="8">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="9">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="10">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                        </measure>
+                        <measure n="5">
+                            <staff n="1">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="2">
+                                <layer>
+                                    <note head.shape="diamond" dur="2" dots="1" stem.dir="up"/>
+                                    <rest dur="4"/>
+                                </layer>
+                            </staff>
+                            <staff n="3">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="4">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="5">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="6">
+                                <layer>
+                                    <chord dur="2" dots="1">
+                                        <note pname="g" oct="6"/>
+                                        <note pname="a" accid="f" oct="6"/>
+                                    </chord>
+                                    <rest dur="2"/>
+                                </layer>
+                            </staff>
+                            <staff n="7">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="8">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="9">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="10">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                        </measure>
+                        <measure n="6">
+                            <staff n="1">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="2">
+                                <layer>
+                                    <note head.shape="diamond" dur="4" stem.dir="up"/>
+                                    <rest dur="2" dots="1"/>
+                                </layer>
+                            </staff>
+                            <staff n="3">
+                                <layer>
+                                    <rest dur="2"/>
+                                    <rest dur="4" dots="1"/>
+                                    <note xml:id="m6_s3_note1" dur="8" stem.dir="down" tie="i"/>
+                                </layer>
+                                <dynam place="below" startid="#m6_s3_note1">ppp</dynam>
+                            </staff>
+                            <staff n="4">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="5">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="6">
+                                <layer>
+                                    <chord dur="4">
+                                        <note pname="a" oct="5"/>
+                                        <note pname="a" accid="f" oct="4"/>
+                                    </chord>
+                                    <rest dur="2" dots="1"/>
+                                </layer>
+                            </staff>
+                            <staff n="7">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="8">
+                                <layer>
+                                    <rest dur="4" dots="1"/>
+                                    <chord dur="2" stem.dir="down" xml:id="m6_s8_chord1">
+                                        <note pname="d" oct="6"/>
+                                        <note pname="e" accid="f" oct="6"/>
+                                    </chord>
+                                    <note pname="g" accid="f" oct="4" dur="8"/>
+                                </layer>
+                                <dynam place="below" startid="#m6_s8_chord1">mf</dynam>
+                            </staff>
+                            <staff n="9">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="10">
+                                <layer>
+                                    <rest dur="4"/>
+                                    <chord dur="2" dots="1" stem.dir="down" xml:id="m6_s10_chord1">
+                                        <note pname="e" oct="3"/>
+                                        <note pname="d" accid="s" oct="3"/>
+                                    </chord>
+                                </layer>
+                                <dynam place="above" startid="#m6_s10_chord1">fff</dynam>
+                            </staff>
+                        </measure>
+                        <measure n="7">
+                            <staff n="1">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="2">
+                                <layer>
+                                    <note dur="2" dots="1" stem.dir="up"/>
+                                    <rest dur="4"/>
+                                </layer>
+                            </staff>
+                            <staff n="3">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="4">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="5">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="6">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="7">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="8">
+                                <layer>
+                                    <note pname="g" accid="f" oct="4" dur="2"/>
+                                    <rest dur="2"/>
+                                </layer>
+                            </staff>
+                            <staff n="9">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="10">
+                                <layer>
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                        </measure>
+                    </section>
+                </score>
+            </mdiv>
+        </body>
+    </music>
+</mei>
+
